@@ -6,6 +6,9 @@ branches:
   only:
     - master
 
+notifications:
+  email: false
+
 env:
   global:
     - GH_REF: github.com/johnagan/ci-demo.git
