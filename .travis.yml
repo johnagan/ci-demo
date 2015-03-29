@@ -24,7 +24,7 @@ before_script:
   - REPO_URL=https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git
 
 script:
-  - echo "<br/>" >> dist/index.html
+  - echo "<br/><br/>" >> dist/index.html
   - git commit -am "added space to index"
 
 after_success:
