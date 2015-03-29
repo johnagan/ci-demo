@@ -15,9 +15,10 @@ notifications:
   email: false
 
 env:
-  - GIT_NAME=Travis-CI
-  - GIT_EMAIL=johnagan+travis@gmail.com
-  - secure: jSXhiLA8DfWrUYu/vVD8QWPMchBno11pPt9r0aX1U9juweUC6Pd0htlzCXw4nuC7DK9UbfT33dJB7bheBW0OJwEyEQqNKDrdPbrpTMmx0gkjgcff5k2SunQi9FKJVWDt6TqFLRklSf1zfC0lAWtmOaPyHHtfplnW2AMksFbfdhw=
+  global:
+    - GIT_NAME=Travis-CI
+    - GIT_EMAIL=johnagan+travis@gmail.com
+    - secure: jSXhiLA8DfWrUYu/vVD8QWPMchBno11pPt9r0aX1U9juweUC6Pd0htlzCXw4nuC7DK9UbfT33dJB7bheBW0OJwEyEQqNKDrdPbrpTMmx0gkjgcff5k2SunQi9FKJVWDt6TqFLRklSf1zfC0lAWtmOaPyHHtfplnW2AMksFbfdhw=
 
 before_script:
   - git config --global user.name "$GIT_NAME"
@@ -25,7 +26,7 @@ before_script:
   - ROOT_PATH=`pwd`
   - DIST_PATH=$ROOT_PATH/dist
   - REPO_URL=https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git
-  
+
 script:
   - git clone $REPO_URL dist
   - cd $DIST_PATH && git checkout gh-pages && rm -rf *
