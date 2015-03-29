@@ -18,7 +18,12 @@ env:
   global:
     - secure: jSXhiLA8DfWrUYu/vVD8QWPMchBno11pPt9r0aX1U9juweUC6Pd0htlzCXw4nuC7DK9UbfT33dJB7bheBW0OJwEyEQqNKDrdPbrpTMmx0gkjgcff5k2SunQi9FKJVWDt6TqFLRklSf1zfC0lAWtmOaPyHHtfplnW2AMksFbfdhw=
 
+before_script:
+  - REPO_URL=https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git
+  - git config user.name "Travis-CI"
+  - git config user.email "johnagan+travis@gmail.com"
+
 after_success:
   - test $TRAVIS_BRANCH == "master" &&
     test $TRAVIS_PULL_REQUEST == "false" &&
-    git subtree push --prefix dist https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git gh-pages
+    git subtree push --prefix dist $REPO_URL gh-pages
