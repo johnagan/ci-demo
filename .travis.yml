@@ -18,18 +18,19 @@ env:
   global:
     - GIT_NAME=Travis-CI
     - GIT_EMAIL=johnagan+travis@gmail.com
+    - GIT_DOMAIN=github.com
     - secure: jSXhiLA8DfWrUYu/vVD8QWPMchBno11pPt9r0aX1U9juweUC6Pd0htlzCXw4nuC7DK9UbfT33dJB7bheBW0OJwEyEQqNKDrdPbrpTMmx0gkjgcff5k2SunQi9FKJVWDt6TqFLRklSf1zfC0lAWtmOaPyHHtfplnW2AMksFbfdhw=
 
 before_script:
   - DIST_PATH=$TRAVIS_BUILD_DIR/dist
-  - REPO_URL=https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git
+  - REPO_URL=https://$GH_TOKEN@$GIT_DOMAIN/$TRAVIS_REPO_SLUG.git
   - git config --global user.name "$GIT_NAME"
   - git config --global user.email "$GIT_EMAIL"
 
 script:
   - git clone $REPO_URL dist
   - cd $DIST_PATH && git checkout gh-pages && rm -rf *
-  - cd $TRAVIS_BUILD_DIR && echo "<br/>" >> $DIST_PATH/index.html
+  - cd $TRAVIS_BUILD_DIR && npm run build
   - cd $DIST_PATH && git commit -am "Travis build \#$TRAVIS_BUILD_NUMBER"
 
 after_success:

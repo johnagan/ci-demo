@@ -1,0 +1,327 @@
+/* Add Fonts */
+/* Add Apex New */
+@font-face {
+  font-family: 'Apex New Book';
+  src: url('fonts/apexnew_book-webfont.eot');
+  src: url('fonts/apexnew_book-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/apexnew_book-webfont.woff2') format('woff2'),
+       url('fonts/apexnew_book-webfont.woff') format('woff'),
+       url('fonts/apexnew_book-webfont.ttf') format('truetype'),
+       url('fonts/apexnew_book-webfont.svg#apex_newbook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add Apex Serif */
+@font-face {
+  font-family: 'Apex Serif Light';
+  src: url('fonts/apexserif_light-webfont.eot');
+  src: url('fonts/apexserif_light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/apexserif_light-webfont.woff2') format('woff2'),
+       url('fonts/apexserif_light-webfont.woff') format('woff'),
+       url('fonts/apexserif_light-webfont.ttf') format('truetype'),
+       url('fonts/apexserif_light-webfont.svg#apex_seriflight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Site styles begin */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Apex New Book", "Helvetica Neue", Helvetica, Arial, serif;
+  font-weight: normal;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 30px;
+  line-height: 1.4;
+  background: rgba(40,52,66,1);
+  background: -moz-linear-gradient(-45deg, rgba(40,52,66,1) 0%, rgba(30,31,41,1) 51%, rgba(55,41,59,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(40,52,66,1)), color-stop(51%, rgba(30,31,41,1)), color-stop(100%, rgba(55,41,59,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(40,52,66,1) 0%, rgba(30,31,41,1) 51%, rgba(55,41,59,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(40,52,66,1) 0%, rgba(30,31,41,1) 51%, rgba(55,41,59,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(40,52,66,1) 0%, rgba(30,31,41,1) 51%, rgba(55,41,59,1) 100%);
+  background: linear-gradient(135deg, rgba(40,52,66,1) 0%, rgba(30,31,41,1) 51%, rgba(55,41,59,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#283442', endColorstr='#37293b', GradientType=1 );
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "Apex Serif Light", Georgia, serif;
+  font-size: 72px;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: .12em;
+}
+
+h2 {
+  position: relative;
+  margin: 0;
+  color: rgb(117,114,122);
+  font-family: "Apex New Book", 'Helvetica Neue', Helvetica, serif;
+  font-size: 24px;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+sup {
+  font-size: 50%;
+}
+
+p {
+  font-family: "Apex New Book", 'Helvetica Neue', Helvetica, serif;
+  font-size: 18px;
+}
+
+hr {
+  position: relative;
+  margin: 45px auto;
+  width: 240px;
+  height: 20px;
+  border: none;
+  background: url('images/hr.svg') no-repeat center;
+}
+
+.inner {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.logo img {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* MailChimp form styles */
+#mc_embed_signup {
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  clear: left;
+  text-align: center;
+}
+
+#mc_embed_signup p {
+  position: relative;
+  top: 20px;
+  color: rgb(117,114,122);
+  font-weight: 300;
+  clear: both;
+
+  /* letter space for crisp reversed-out type */
+  letter-spacing: .03em;
+}
+
+.mc-field-group {
+  position: relative;
+  width: 400px;
+  margin: 15px auto;
+}
+
+#mc_embed_signup label {
+  display: none;
+}
+
+#mc-embedded-subscribe-form .email {
+display: inline-block;
+float: left;
+padding: 10px;
+height: 40px;
+width: 280px;
+background-color: rgb(117,114,122);
+border: none;
+border-radius: 2px;
+}
+
+#mc-embedded-subscribe-form .email:focus {
+  border: none;
+  background-color: #fff;
+}
+
+
+#mc-embedded-subscribe-form .button {
+display: inline-block;
+float: left;
+margin-left: 10px;
+padding: 5px;
+width: 100px;
+height: 40px;
+color: rgb(117,114,122);
+background: none;
+border: 2px solid rgb(117,114,122);
+border-radius: 2px;
+letter-spacing: .03em
+}
+
+#mc-embedded-subscribe-form .button:hover,
+#mc-embedded-subscribe-form .button:focus {
+color: #fff;
+border: 2px solid #fff;
+}
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+  .inner {
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+  .inner {
+    width: 100%;
+    padding: 10px 10px;
+
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .mc-field-group {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  #mc-embedded-subscribe-form .email {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+
+  #mc-embedded-subscribe-form .button {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  body {
+    padding: 15px 10px 20px 10px;
+  }
+
+  .inner {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .logo img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .mc-field-group {
+    position: relative;
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  #mc-embedded-subscribe-form .email {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  #mc-embedded-subscribe-form .button {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  hr {
+    margin: 30px auto;
+  }
+}
