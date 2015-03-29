@@ -31,6 +31,7 @@ script:
   - git checkout gh-pages
   - cd $ROOT_PATH
   - echo "<br/>" >> $DIST_PATH/index.html
+  - cd $DIST_PATH
   - git commit -am "added space to index"
 
 after_success:
