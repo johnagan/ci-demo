@@ -15,19 +15,20 @@ notifications:
   email: false
 
 env:
-  global:
-    - secure: jSXhiLA8DfWrUYu/vVD8QWPMchBno11pPt9r0aX1U9juweUC6Pd0htlzCXw4nuC7DK9UbfT33dJB7bheBW0OJwEyEQqNKDrdPbrpTMmx0gkjgcff5k2SunQi9FKJVWDt6TqFLRklSf1zfC0lAWtmOaPyHHtfplnW2AMksFbfdhw=
-
-before_script:
-  - git config --global user.name "Travis-CI"
-  - git config --global user.email "johnagan+travis@gmail.com"
-  - REPO_URL=https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git
+  - GIT_NAME=Travis-CI
+  - GIT_EMAIL=johnagan+travis@gmail.com
   - ROOT_PATH=`pwd`
   - DIST_PATH=$ROOT_PATH/dist
+  - REPO_URL=https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git
+  - secure: jSXhiLA8DfWrUYu/vVD8QWPMchBno11pPt9r0aX1U9juweUC6Pd0htlzCXw4nuC7DK9UbfT33dJB7bheBW0OJwEyEQqNKDrdPbrpTMmx0gkjgcff5k2SunQi9FKJVWDt6TqFLRklSf1zfC0lAWtmOaPyHHtfplnW2AMksFbfdhw=
+
+before_script:
+  - git config --global user.name "$GIT_NAME"
+  - git config --global user.email "$GIT_EMAIL"
 
 script:
   - git clone $REPO_URL dist
-  - cd $DIST_PATH && git checkout gh-pages
+  - cd $DIST_PATH && git checkout gh-pages && rm -rf *
   - cd $ROOT_PATH && echo "<br/>" >> $DIST_PATH/index.html
   - cd $DIST_PATH && git commit -am "added space to index"
 
