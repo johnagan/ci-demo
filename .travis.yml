@@ -22,15 +22,19 @@ before_script:
   - git config --global user.name "Travis-CI"
   - git config --global user.email "johnagan+travis@gmail.com"
   - REPO_URL=https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git
+  - ROOT_PATH=`pwd`
+  - DIST_PATH=$ROOT_PATH/dist
 
 script:
   - git clone $REPO_URL dist
-  - cd dist
+  - cd $DIST_PATH
   - git checkout gh-pages
-  - echo "<br/>" >> index.html
+  - cd $ROOT_PATH
+  - echo "<br/>" >> $DIST_PATH/index.html
   - git commit -am "added space to index"
 
 after_success:
+  - cd $DIST_PATH
   - test $TRAVIS_BRANCH == "master" &&
     test $TRAVIS_PULL_REQUEST == "false" &&
     git push $REPO_URL gh-pages
