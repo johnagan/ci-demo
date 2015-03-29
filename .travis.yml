@@ -27,12 +27,9 @@ before_script:
 
 script:
   - git clone $REPO_URL dist
-  - cd $DIST_PATH
-  - git checkout gh-pages
-  - cd $ROOT_PATH
-  - echo "<br/>" >> $DIST_PATH/index.html
-  - cd $DIST_PATH
-  - git commit -am "added space to index"
+  - cd $DIST_PATH && git checkout gh-pages
+  - cd $ROOT_PATH && echo "<br/>" >> $DIST_PATH/index.html
+  - cd $DIST_PATH && git commit -am "added space to index"
 
 after_success:
   - cd $DIST_PATH
