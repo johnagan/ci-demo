@@ -31,7 +31,7 @@ script:
   - git clone $REPO_URL dist
   - cd $DIST_PATH && git checkout gh-pages && rm -rf *
   - cd $TRAVIS_BUILD_DIR && npm run build
-  - cd $DIST_PATH && git -A && git commit -am "Travis build \#$TRAVIS_BUILD_NUMBER"
+  - cd $DIST_PATH && git add -A && git commit -am "Travis build \#$TRAVIS_BUILD_NUMBER"
 
 after_success:
   - cd $DIST_PATH
