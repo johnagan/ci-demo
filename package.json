@@ -4,8 +4,7 @@
   "description": "Sample",
   "author": "John Agan <johnagan@github.com>",
   "scripts": {
-    "test": "mocha -c --compilers coffee:coffee-script/register",
-    "deploy": "git subtree push --prefix dist https://$GH_TOKEN@$GH_REF gh-pages > /dev/null 2>&1"
+    "test": "mocha -c --compilers coffee:coffee-script/register"
   },
   "devDependencies": {
     "coffee-script": "~1.9.1",
