@@ -6,6 +6,8 @@ branches:
   only:
     - master
 
+script: npm run deploy
+
 env:
   global:
     - GH_REF: github.com/johnagan/ci-demo.git
