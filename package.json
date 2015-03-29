@@ -1,0 +1,13 @@
+{
+  "name": "github-ci-demo",
+  "version": "0.0.1",
+  "description": "Sample",
+  "author": "John Agan <johnagan@github.com>",
+  "scripts": {
+    "test": "mocha -c --compilers coffee:coffee-script/register"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.9.1",
+    "mocha": "~2.2.1"
+  }
+}
