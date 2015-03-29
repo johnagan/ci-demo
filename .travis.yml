@@ -13,5 +13,5 @@ env:
 
 script:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
-      npm run deploy
+      npm run deploy;
     fi
