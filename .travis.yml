@@ -27,7 +27,7 @@ script:
   - git clone $REPO_URL dist
   - cd dist
   - git checkout gh-pages
-  - echo "<br/><br/>" >> index.html
+  - echo "<br/>" >> index.html
   - git commit -am "added space to index"
 
 after_success:
