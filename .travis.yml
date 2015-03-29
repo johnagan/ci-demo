@@ -30,7 +30,7 @@ script:
   - git clone $REPO_URL dist
   - cd $DIST_PATH && git checkout gh-pages && rm -rf *
   - cd $TRAVIS_BUILD_DIR && echo "<br/>" >> $DIST_PATH/index.html
-  - cd $DIST_PATH && git commit -am "Travis build #$TRAVIS_BUILD_NUMBER"
+  - cd $DIST_PATH && git commit -am "Travis build \#$TRAVIS_BUILD_NUMBER"
 
 after_success:
   - cd $DIST_PATH
