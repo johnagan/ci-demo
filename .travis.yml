@@ -20,4 +20,4 @@ env:
 after_success:
   - test $TRAVIS_BRANCH == "master" &&
     test $TRAVIS_PULL_REQUEST == "false" &&
-    git subtree push --prefix dist https://$GH_TOKEN@$github.com/TRAVIS_REPO_SLUG.git gh-pages
+    git subtree push --prefix dist https://$GH_TOKEN@$github.com/$TRAVIS_REPO_SLUG.git gh-pages
