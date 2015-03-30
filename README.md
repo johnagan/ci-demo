@@ -37,11 +37,11 @@ The local server runs on [Webpack Dev Server](http://webpack.github.io/docs/webp
 $ npm install
 ```
 
-**Run Tests**
+**Tests**
 ```bash
 $ npm test
 ```
-**Start WebServer**
+**WebServer**
 ```bash
 $ npm start
 ```
