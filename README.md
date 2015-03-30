@@ -28,9 +28,15 @@ GIT_DOMAIN    | The domain address of the GitHub or GitHub Enterprise server
 GH_TOKEN      | The [encrypted](http://docs.travis-ci.com/user/encryption-keys/) GitHub [personal access token](https://github.com/settings/applications) used to deploy
 
 ## Running Locally
-Run the following commands in the project root after cloning:
+The local server runs on [Webpack Dev Server](http://webpack.github.io/docs/webpack-dev-server.html) and can be started by running:
 ```bash
 $ npm install
 $ npm start
 ```
-The demo can then be accessed at [http://localhost:8080](http://localhost:8080)
+Once running, the demo can then be accessed at:
+
+[http://localhost:8080](http://localhost:8080)
+
+or
+
+[http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server) for live reload.
