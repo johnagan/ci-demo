@@ -7,13 +7,13 @@ This demo was created to demonstrate a sample workflow for continuous integratio
 0. Open the [GitHub Pages](http://johnagan.github.io/ci-demo/) url
 0. Create a new branch
 0. Remove the text from one of the entries in [content.json](./src/content.json)
-0. Commit changes with a description message
-0. Create a pull request with a description message
+0. Commit changes with a descriptive message
+0. Create a pull request with a descriptive message
 0. Wait for Travis-CI to complete (there should be an error)
 
 ##### Fix the branch and merge
 0. Go back to the [content.json](./src/content.json) file and add text to the blank entry
-0. Commit changes with a description message
+0. Commit changes with a descriptive message
 0. Go back to the open pull request and wait for Travis to complete (it should be green)
 0. Optional - Refresh/goto the [GitHub Pages](http://johnagan.github.io/ci-demo/) url to confirm no changes were made
 0. Merge the pull request
