@@ -4,25 +4,8 @@ This demo was created to demonstrate a sample workflow for continuous integratio
 ## Demo Page
 After a successful deployment, you can view the results on [GitHub Pages](http://johnagan.github.io/ci-demo/) for this repository.
 
-## Running Locally
-The local server runs on [Webpack Dev Server](http://webpack.github.io/docs/webpack-dev-server.html) and can be started by running:
-```bash
-$ npm install
-$ npm start
-```
-Once running, the demo can then be accessed at:
-
-* Main Site - [http://localhost:8080](http://localhost:8080)
-* Development - [http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server)
-
 ## Tests
 The [current tests](./test) are written in [mocha](http://mochajs.org/) and only check for blank entries in the [content.json](./src/content.json).
-
-Testing can be run locally by calling
-```
-npm test
-```
-
 
 ## Automation Steps
 All steps happen on the [Travis-CI container](http://docs.travis-ci.com/user/workers/container-based-infrastructure/) and can be monitored by going to the [Travis dashboard](https://travis-ci.org/repositories).
@@ -45,3 +28,24 @@ GIT_NAME      | The display name to use when Travis commits to Git
 GIT_EMAIL     | The email address to use when Travis commits to Git
 GIT_DOMAIN    | The domain address of the GitHub or GitHub Enterprise server
 GH_TOKEN      | The [encrypted](http://docs.travis-ci.com/user/encryption-keys/) GitHub [personal access token](https://github.com/settings/applications) used to deploy
+
+## Running Locally
+The local server runs on [Webpack Dev Server](http://webpack.github.io/docs/webpack-dev-server.html).
+
+**Setup**
+```bash
+$ npm install
+```
+
+**Run Tests**
+```bash
+$ npm test
+```
+**Start WebServer**
+```bash
+$ npm start
+```
+**URLs**
+* Main Site - [http://localhost:8080](http://localhost:8080)
+* Development - [http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server)
+
