@@ -5,7 +5,7 @@ This demo was created to demonstrate a sample workflow for continuous integratio
 After a successful deployment, you can view the results on [GitHub Pages](http://johnagan.github.io/ci-demo/) for this repository.
 
 ## Tests
-The [current tests](./test) are written in [mocha](http://mochajs.org/) and only check for blank entries in the [content.json](./src/content.json).
+The [tests](./test) are written in [mocha](http://mochajs.org/) and check for blank entries in the [content.json](./src/content.json).
 
 ## Automation Steps
 All steps happen on the [Travis-CI container](http://docs.travis-ci.com/user/workers/container-based-infrastructure/) and can be monitored by going to the [Travis dashboard](https://travis-ci.org/repositories).
