@@ -85,7 +85,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = {
-		"title": "Hello World!",
+		"title": "GitHub Demo",
 		"subtitle": "Continuous Integration &middot; Automated Deployment",
 		"message": "Thank you for watching this demo"
 	}
