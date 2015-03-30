@@ -28,7 +28,7 @@ before_script:
   - git config --global user.email "$GIT_EMAIL"
 
 after_success:
-  - if [[$TRAVIS_BRANCH == "master"]] && [[$TRAVIS_PULL_REQUEST == "false"]]; then
+  - if [[ $TRAVIS_BRANCH == "master" ]] && [[ $TRAVIS_PULL_REQUEST == "false" ]]; then
       cd $DIST_PATH;
       git clone $REPO_URL dist;
       cd $DIST_PATH && git checkout gh-pages && rm -rf *;
