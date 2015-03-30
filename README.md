@@ -1,6 +1,19 @@
 # Travis-CI to GitHub Pages Demo ![](https://api.travis-ci.org/johnagan/ci-demo.svg)
 This demo was created to demonstrate a sample workflow for continuous integration and automated deployment.
 
+## Demo Flow
+1. Create a new branch
+2. Remove the text from one of the entries in [content.json](./src/content.json)
+3. Commit changes with a description message
+4. Create a pull request with a description message
+5. Wait for Travis-CI to complete (there should be an error)
+6. Go back to the [content.json](./src/content.json) file and add text to the blank entry
+7. Commit changes with a description message
+8. Go back to the open pull request and wait for Travis to complete (it should be green)
+9. Optional - Goto the [GitHub Pages](http://johnagan.github.io/ci-demo/) url to confirm no changes were made
+10. Merge the pull request
+11. Goto the [GitHub Pages](http://johnagan.github.io/ci-demo/) and confirm the changes are reflected
+
 ## Demo Page
 After a successful deployment, you can view the results on [GitHub Pages](http://johnagan.github.io/ci-demo/) for this repository.
 
