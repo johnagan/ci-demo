@@ -87,7 +87,7 @@
 	module.exports = {
 		"title": "Hello World!",
 		"subtitle": "Continuous Integration &middot; Automated Deployment",
-		"message": "Thank you for watching this demo!"
+		"message": "Thank you for watching this demo"
 	}
 
 /***/ },
