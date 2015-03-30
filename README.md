@@ -29,8 +29,8 @@ All steps happen on the [Travis-CI container](http://docs.travis-ci.com/user/wor
 3. Builds packages with ```npm install```
 4. Clones GitHub Pages branch ```gh-pages``` into ```dist``` folder
 5. Cleans and rebuilds ```dist``` folder by running ```npm run build```
-6. Commits changes
-7. Runs tests by calling ```npm test```
+6. Runs tests by calling ```npm test```
+7. Commits changes
 8. If request is *not* a pull request and is the **master** branch, Travis will push the ```dist``` folder to ```gh-pages``` in GitHub.
 
 ## Travis Settings
@@ -62,4 +62,3 @@ $ npm start
 **URLs**
 * Main Site - [http://localhost:8080](http://localhost:8080)
 * Development - [http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server)
-
