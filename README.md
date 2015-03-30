@@ -1,4 +1,4 @@
-# Travis-CI to GitHub Pages Demo
+# Travis-CI to GitHub Pages Demo ![](https://api.travis-ci.org/johnagan/ci-demo.svg)
 This demo was created to demonstrate a sample workflow for continuous integration and automated deployment.
 
 ## Demo Page
