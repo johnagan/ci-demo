@@ -17,7 +17,7 @@ module.exports = {
       { test: /\.json$/, loader: "json"},
       { test: /\.coffee$/, loader: "coffee" },
       { test: /\.css$/, loaders: ["style", "css"]},
-      { test: /.ico$/, loader: "file?name=[name].[ext]"},
+      { test: /\.ico$/, loader: "file?name=[name].[ext]"},
       { test: /images.+\.(png|jpg|gif|svg)$/, loader: "file?name=images/[name].[ext]"},
       { test: /fonts.+\.(woff|woff2|eot|ttf|svg)$/, loader: "file?name=fonts/[name].[ext]"}
     ]
