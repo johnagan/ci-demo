@@ -2,12 +2,12 @@
 /* Add Apex New */
 @font-face {
   font-family: 'Apex New Book';
-  src: url('fonts/apexnew_book-webfont.eot');
-  src: url('fonts/apexnew_book-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/apexnew_book-webfont.woff2') format('woff2'),
-       url('fonts/apexnew_book-webfont.woff') format('woff'),
-       url('fonts/apexnew_book-webfont.ttf') format('truetype'),
-       url('fonts/apexnew_book-webfont.svg#apex_newbook') format('svg');
+  src: url('../fonts/apexnew_book-webfont.eot');
+  src: url('../fonts/apexnew_book-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/apexnew_book-webfont.woff2') format('woff2'),
+       url('../fonts/apexnew_book-webfont.woff') format('woff'),
+       url('../fonts/apexnew_book-webfont.ttf') format('truetype'),
+       url('../fonts/apexnew_book-webfont.svg#apex_newbook') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,12 +15,12 @@
 /* Add Apex Serif */
 @font-face {
   font-family: 'Apex Serif Light';
-  src: url('fonts/apexserif_light-webfont.eot');
-  src: url('fonts/apexserif_light-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/apexserif_light-webfont.woff2') format('woff2'),
-       url('fonts/apexserif_light-webfont.woff') format('woff'),
-       url('fonts/apexserif_light-webfont.ttf') format('truetype'),
-       url('fonts/apexserif_light-webfont.svg#apex_seriflight') format('svg');
+  src: url('../fonts/apexserif_light-webfont.eot');
+  src: url('../fonts/apexserif_light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/apexserif_light-webfont.woff2') format('woff2'),
+       url('../fonts/apexserif_light-webfont.woff') format('woff'),
+       url('../fonts/apexserif_light-webfont.ttf') format('truetype'),
+       url('../fonts/apexserif_light-webfont.svg#apex_seriflight') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -107,7 +107,7 @@ hr {
   width: 240px;
   height: 20px;
   border: none;
-  background: url('images/hr.svg') no-repeat center;
+  background: url('../images/hr.svg') no-repeat center;
 }
 
 .inner {

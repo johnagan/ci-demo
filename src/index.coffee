@@ -1,4 +1,7 @@
-require "file?name=[name].[ext]!./index.html"
 require "normalize.css/normalize"
-require.context "./images"
-require "./styles"
+require.context "images"
+require "stylesheets"
+
+content = require("content")
+document.title = content.title
+document.body.innerHTML = require("views/index")(content)
