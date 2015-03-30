@@ -1,5 +1,5 @@
 {
-  "name": "github-ci-demo",
+  "name": "travis-pages-demo",
   "version": "0.0.1",
   "description": "GitHub continuous integration and automated deployment demo",
   "author": "John Agan <johnagan@github.com>",

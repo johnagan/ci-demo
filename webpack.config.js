@@ -23,7 +23,9 @@ module.exports = {
     ]
   },
 
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    title: "GitHub Demo"
+  })],
 
   resolve: {
     extensions: ["", ".coffee", ".js", ".css", ".jade", ".json"],
