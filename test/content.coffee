@@ -1,5 +1,5 @@
 assert = require 'assert'
-content = require("../src/content.json")
+content = require '../src/content.json'
 
 describe 'Content', ->
 
