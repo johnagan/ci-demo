@@ -3,7 +3,11 @@ content = require '../src/content.json'
 
 describe 'Content', ->
 
-  for field in Object.keys(content)
+  it 'should contain a title', ->
+    assert content.title.length > 0, 'The title is blank'
 
-    it "should contain a #{field}", ->
-      assert content[field].length > 0, "The #{field} is blank"
+  it 'should contain a subtitle', ->
+    assert content.subtitle.length > 0, 'The subtitle is blank'
+
+  it 'should contain a message', ->
+    assert content.message.length > 0, 'The message is blank'
