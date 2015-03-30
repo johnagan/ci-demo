@@ -54,8 +54,6 @@
 
 	content = __webpack_require__(2);
 
-	document.title = content.title;
-
 	document.body.innerHTML = __webpack_require__(7)(content);
 
 
