@@ -35,8 +35,5 @@ $ npm start
 ```
 Once running, the demo can then be accessed at:
 
-[http://localhost:8080](http://localhost:8080)
-
-or
-
-[http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server) for live reload.
+* Main Site - [http://localhost:8080](http://localhost:8080)
+* Development - [http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server)
