@@ -17,7 +17,7 @@ notifications:
 env:
   global:
     - GIT_NAME=Travis-CI
-    - GIT_EMAIL=johnagan+travis@github.com
+    - GIT_EMAIL=kaihj+travis@github.com
     - GIT_DOMAIN=github.com
     - secure: jSXhiLA8DfWrUYu/vVD8QWPMchBno11pPt9r0aX1U9juweUC6Pd0htlzCXw4nuC7DK9UbfT33dJB7bheBW0OJwEyEQqNKDrdPbrpTMmx0gkjgcff5k2SunQi9FKJVWDt6TqFLRklSf1zfC0lAWtmOaPyHHtfplnW2AMksFbfdhw=
 
