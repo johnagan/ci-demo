@@ -1,10 +1,10 @@
-# Travis-CI to GitHub Pages Demo ![](https://api.travis-ci.org/johnagan/ci-demo.svg)
+# Travis-CI to GitHub Pages Demo ![](https://api.travis-ci.org/kaihj/ci-demo.svg)
 This demo was created to demonstrate a sample workflow for continuous integration and automated deployment from [Travis-CI](https://travis-ci.org) to [GitHub Pages](https://pages.github.com/).
 
 ## Demo Flow
 
 ##### Create a broken branch
-0. Open the [GitHub Pages](http://johnagan.github.io/ci-demo/) url
+0. Open the [GitHub Pages](http://kaihj.github.io/ci-demo/) url
 0. Create a new branch
 0. Remove the text from one of the entries in [content.json](./src/content.json)
 0. Commit changes with a descriptive message
@@ -15,12 +15,12 @@ This demo was created to demonstrate a sample workflow for continuous integratio
 0. Go back to the [content.json](./src/content.json) file and add text to the blank entry
 0. Commit changes with a descriptive message
 0. Go back to the open pull request and wait for Travis to complete (it should be green)
-0. Optional - Refresh/goto the [GitHub Pages](http://johnagan.github.io/ci-demo/) url to confirm no changes were made
+0. Optional - Refresh/goto the [GitHub Pages](http://kaihj.github.io/ci-demo/) url to confirm no changes were made
 0. Merge the pull request
-0. Refresh/goto the [GitHub Pages](http://johnagan.github.io/ci-demo/) and confirm the changes are reflected
+0. Refresh/goto the [GitHub Pages](http://kaihj.github.io/ci-demo/) and confirm the changes are reflected
 
 ## Demo Page
-After a successful deployment, you can view the results on [GitHub Pages](http://johnagan.github.io/ci-demo/) for this repository.
+After a successful deployment, you can view the results on [GitHub Pages](http://kaihj.github.io/ci-demo/) for this repository.
 
 ## Tests
 The [tests](./test) are written in [mocha](http://mochajs.org/) and check for blank entries in the [content.json](./src/content.json).
