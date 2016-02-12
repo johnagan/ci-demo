@@ -88,7 +88,7 @@
 		"title": "GitHub Demo",
 		"subtitle": "this is a test",
 		"message": "Thank you for watching this demo"
-	}
+	};
 
 /***/ },
 /* 3 */
@@ -168,19 +168,19 @@
 /* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "favicon.ico"
+	module.exports = __webpack_require__.p + "favicon.ico";
 
 /***/ },
 /* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "images/github_logo.svg"
+	module.exports = __webpack_require__.p + "images/github_logo.svg";
 
 /***/ },
 /* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "images/hr.svg"
+	module.exports = __webpack_require__.p + "images/hr.svg";
 
 /***/ },
 /* 11 */
@@ -403,61 +403,61 @@
 /* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fonts/apexnew_book-webfont.eot"
+	module.exports = __webpack_require__.p + "fonts/apexnew_book-webfont.eot";
 
 /***/ },
 /* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fonts/apexnew_book-webfont.woff2"
+	module.exports = __webpack_require__.p + "fonts/apexnew_book-webfont.woff2";
 
 /***/ },
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fonts/apexnew_book-webfont.woff"
+	module.exports = __webpack_require__.p + "fonts/apexnew_book-webfont.woff";
 
 /***/ },
 /* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fonts/apexnew_book-webfont.ttf"
+	module.exports = __webpack_require__.p + "fonts/apexnew_book-webfont.ttf";
 
 /***/ },
 /* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fonts/apexnew_book-webfont.svg"
+	module.exports = __webpack_require__.p + "fonts/apexnew_book-webfont.svg";
 
 /***/ },
 /* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fonts/apexserif_light-webfont.eot"
+	module.exports = __webpack_require__.p + "fonts/apexserif_light-webfont.eot";
 
 /***/ },
 /* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fonts/apexserif_light-webfont.woff2"
+	module.exports = __webpack_require__.p + "fonts/apexserif_light-webfont.woff2";
 
 /***/ },
 /* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fonts/apexserif_light-webfont.woff"
+	module.exports = __webpack_require__.p + "fonts/apexserif_light-webfont.woff";
 
 /***/ },
 /* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fonts/apexserif_light-webfont.ttf"
+	module.exports = __webpack_require__.p + "fonts/apexserif_light-webfont.ttf";
 
 /***/ },
 /* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "fonts/apexserif_light-webfont.svg"
+	module.exports = __webpack_require__.p + "fonts/apexserif_light-webfont.svg";
 
 /***/ },
 /* 23 */
